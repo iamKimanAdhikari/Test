@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Red heart shape -->
+    <path
+        android:fillColor="#E53E3E"
+        android:pathData="M54,30C48,20 36,20 36,33C36,45 54,65 54,65C54,65 72,45 72,33C72,20 60,20 54,30Z"/>
+
+    <!-- Heart shadow/depth for better visual -->
+    <path
+        android:fillColor="#C53030"
+        android:pathData="M54,32C49,23 39,23 39,34C39,44 54,62 54,62C54,62 69,44 69,34C69,23 59,23 54,32Z"/>
+
+    <!-- Heart highlight -->
+    <path
+        android:fillColor="#FC8181"
+        android:pathData="M54,28C50,21 42,21 42,31C42,40 54,57 54,57C54,57 66,40 66,31C66,21 58,21 54,28Z"/>
+
+    <!-- Small highlight dot for shine effect - using path instead of circle -->
+    <path
+        android:fillColor="#FFF5F5"
+        android:pathData="M48,32.5 A2.5,2.5 0 1,1 48,37.5 A2.5,2.5 0 1,1 48,32.5 Z"/>
+
+</vector>

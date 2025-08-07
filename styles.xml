@@ -1,0 +1,23 @@
+<resources>
+    <!-- Light Theme -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#FF9800</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#757575</item>
+        <item name="colorOnSurface">#212121</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="DarkTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">#66BB6A</item>
+        <item name="colorPrimaryDark">#4CAF50</item>
+        <item name="colorAccent">#FFB74D</item>
+        <item name="android:windowBackground">#121212</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B0BEC5</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+    </style>
+</resources>

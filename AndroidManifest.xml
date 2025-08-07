@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthTrackerApp"
+        tools:targetApi="31">
+
+        <!-- Login Activity (Main Entry Point) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HealthTrackerApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <!-- Main Menu Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <!-- Health Entry Activities -->
+        <activity
+            android:name=".AddExerciseActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".AddMealsActivity"
+            android:exported="false"
+            android:parentActivityName=".AddExerciseActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".ActivitySummaryActivity"
+            android:exported="false"
+            android:parentActivityName=".AddMealsActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <!-- History Activities -->
+        <activity
+            android:name=".HistoryMenuActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".ExerciseHistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".HistoryMenuActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".MealHistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".HistoryMenuActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <!-- Profile and Settings -->
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <!-- Privacy & Consent Activities -->
+        <activity
+            android:name=".PrivacyConsentActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".PrivacyConsentActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+        <activity
+            android:name=".PrivacySettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity"
+            android:theme="@style/Theme.HealthTrackerApp" />
+
+    </application>
+
+</manifest>

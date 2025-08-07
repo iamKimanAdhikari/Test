@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Exercise"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Health Insights -->
+        <TextView
+            android:id="@+id/tvHealthInsight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health insights"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:background="@drawable/card_background"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Recommendations -->
+        <TextView
+            android:id="@+id/tvRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommendations"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:padding="15dp"
+            android:background="@drawable/card_background"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Form -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <EditText
+            android:id="@+id/etExerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Exercise Name"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary" />
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Duration (minutes)"
+            android:inputType="number"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary" />
+
+        <EditText
+            android:id="@+id/etCaloriesBurnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="Calories Burnt"
+            android:inputType="number"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary" />
+
+        <!-- Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:text="Back"
+                android:textSize="18sp"
+                android:backgroundTint="#607D8B"
+                android:textColor="@android:color/white"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Continue"
+                android:textSize="18sp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:elevation="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

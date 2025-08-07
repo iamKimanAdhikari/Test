@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome back, User!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Quick Stats -->
+        <TextView
+            android:id="@+id/tvQuickStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Your Progress Summary"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <!-- Grid Layout (2x2) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Top Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <!-- Health Entry -->
+                <Button
+                    android:id="@+id/btnHealthEntry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:text="New Entry"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#4CAF50"
+                    android:drawableTop="@drawable/ic_activity"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/white"
+                    android:elevation="4dp" />
+
+                <!-- View History -->
+                <Button
+                    android:id="@+id/btnViewHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="History"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#2196F3"
+                    android:drawableTop="@drawable/ic_history"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/white"
+                    android:elevation="4dp" />
+            </LinearLayout>
+
+            <!-- Bottom Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <!-- Edit Profile -->
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:text="Profile"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#FF9800"
+                    android:drawableTop="@drawable/ic_user"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/white"
+                    android:elevation="4dp" />
+
+                <!-- View Trends -->
+                <Button
+                    android:id="@+id/btnViewTrends"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:text="Trends"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#9C27B0"
+                    android:drawableTop="@drawable/ic_trends"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/white"
+                    android:elevation="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#607D8B"
+            android:drawableTop="@drawable/ic_settings_white"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#F44336"
+            android:drawableTop="@drawable/ic_logout"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

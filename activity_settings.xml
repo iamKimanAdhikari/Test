@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customize your health tracking experience"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <!-- Settings Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <!-- Dark Mode Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark Mode"
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <Switch
+                    android:id="@+id/switchDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Notifications Toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notifications"
+                    android:textSize="18sp"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <Switch
+                    android:id="@+id/switchNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnPrivacySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Privacy Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#9C27B0"
+            android:drawableTop="@drawable/ic_privacy"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnHealthTrends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Health Trends"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2196F3"
+            android:drawableTop="@drawable/ic_trends"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="About App"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#607D8B"
+            android:drawableTop="@drawable/ic_info"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#607D8B"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal Health Tracker</string>
+    <string name="login_title">Login to Your Account</string>
+    <string name="register_title">Create Account</string>
+    <string name="health_entry">Health Entry</string>
+    <string name="view_history">View History</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="exercise_history">Exercise History</string>
+    <string name="meal_history">Meal History</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="add_meals">Add Meals</string>
+    <string name="activity_summary">Activity Summary</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Full Name</string>
+    <string name="age_hint">Age</string>
+    <string name="weight_hint">Weight (kg)</string>
+    <string name="height_hint">Height (cm)</string>
+    <string name="exercise_name_hint">Exercise Name</string>
+    <string name="duration_hint">Duration (minutes)</string>
+    <string name="calories_burnt_hint">Calories Burnt</string>
+    <string name="meal_name_hint">Meal Name</string>
+    <string name="calories_consumed_hint">Calories Consumed</string>
+    <string name="water_intake_hint">Water Intake (liters)</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="main_menu">Main Menu</string>
+</resources>

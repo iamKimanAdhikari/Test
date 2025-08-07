@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Trends"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Health Insights Card -->
+        <TextView
+            android:id="@+id/tvHealthInsight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Health Trends Overview"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:background="@drawable/card_background"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- Calories Trend Chart -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/caloriesTrendChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_background"
+            android:padding="10dp"/>
+
+        <!-- Exercise Bar Chart -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/exerciseBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_background"
+            android:padding="10dp"/>
+
+        <!-- Water Intake Pie Chart -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/waterIntakePieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/card_background"
+            android:padding="10dp"/>
+
+        <!-- Navigation Button -->
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Dashboard"
+            android:textSize="18sp"
+            android:backgroundTint="#607D8B"
+            android:textColor="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
